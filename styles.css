@@ -1,4 +1,4 @@
-@import url("styles/header.css"); /*diretiva que indica que você quer importar um arquivo CSS para dentro do seu arquivo principal.*/
+@import url("styles/header.css"); /*diretiva que indica importação de um arquivo CSS para dentro do seu arquivo principal.*/
 @import url("styles/banner.css");
 @import url("styles/carrossel.css");
 @import url("styles/topicos.css");

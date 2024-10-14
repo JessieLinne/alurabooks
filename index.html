@@ -49,7 +49,7 @@
     </section>
 
     <section class="carrossel">
-        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <h2 class="carrossel__titulo">Últimos Lançamentos</h2>
         <!-- Slider main container -->
         <div class="swiper">
             <!-- If we need pagination -->
@@ -99,7 +99,32 @@
             </div>
     </section>
         
-    <section>   
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="imagens/Guia Front-end.svg"
+                        alt="Livro Guia Front-End"></div>
+                <div class="swiper-slide"><img src="imagens/Javascript.svg"
+                        alt="Livro JavaScript"></div>
+                <div class="swiper-slide"><img src="imagens/ApacheKafka.svg"
+                        alt="Livro Apache Kfka e Spring Boot"></div>
+                <div class="swiper-slide"><img src="imagens/Portugol.svg" alt="Livro sobre portugol"></div>
+                <div class="swiper-slide"><img src="imagens/Acessibilidade.svg" alt="Livro Acessibilidade na Web"></div>
+                <div class="swiper-slide"><img src="imagens/Lideranc╠ºa.svg" alt="Livro Liderança em Design"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>  
+        
         <div class="card">
             <!--1ª linha-->
             <div class="card__descricao">
@@ -111,10 +136,8 @@
                     <p class="descricao_texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
                 </div>
                 <!--2ª coluna-->
-            <img src="/imagens/Escritora.svg" alt="Foto da autora" class="descricao__imagem">
-            
-            
-        </div>
+            <img src="/imagens/Escritora.svg" alt="Foto da autora" class="descricao__imagem"> 
+            </div>
         <!--2ªlinha-->
         <div class="card__botoes__segundo">
             <!--1ªcoluna-->
@@ -124,7 +147,7 @@
             </ul>
             <!--2ª coluna-->
             <a href="#" class="botoes__ancora">Saiba mais</a>
-            </div>
+        </div>
         </div>
     </section>
 
@@ -172,8 +195,8 @@
 
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--script JavaScript que utiliza a biblioteca Swiper para criar um carrossel de slides.-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--Esta linha importa a biblioteca Swiper, que é necessária para criar e controlar o carrossel.-->
         <script>
             const swiper = new Swiper('.swiper', {
             /* speed: 400, - velocidade do carrossel*/
