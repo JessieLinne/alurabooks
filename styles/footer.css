@@ -1,0 +1,8 @@
+hr { /*não precisa inserir . para chamar a tag no css*/
+    margin: 0;
+}
+.rodape {
+    background-color: var(--branco);
+    padding: 1em;
+    
+}
