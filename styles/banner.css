@@ -33,3 +33,19 @@
     background: url(../imagens/Lupa.svg) no-repeat 1em;   
 }
 
+/*<@media> media query para aplicar estilo em determinado tamanho de tela; <screen> é um media type, ou seja, a declaração de um tipo de mídia; a ordem em que é colocada no arquivo não impacta diretamente em como ela funciona. */
+@media screen and (min-width: 1024px) {
+    .banner__titulo {
+        font-size: 36px;
+    }
+
+    .banner__pesquisa {
+        width: 50%;
+    }
+
+    .banner__pesquisa::placeholder {
+        /*define a posição do background do <::placeholder>.*/
+        background-position: 6em;
+        /*usada para posicionar uma imagem de fundo dentro de um elemento. */
+    }
+}

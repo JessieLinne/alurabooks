@@ -31,7 +31,7 @@
     width: 60vw;
 }
 
-.container__botao:checked ~ .lista-menu {
+.container__botao:checked~.lista-menu { /*exibe a <lista-menu> quando o item <container__botao> estiver marcado <checked>.*/
     display: block;
 }
 
@@ -54,7 +54,62 @@
     text-transform: uppercase;
 }
 
+
+/*oculta a estrutura e estilização no layout mobile*/
 .container__botao {
     display: none;
 }
 
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+/*<@media> media query para aplicar estilo em determinado tamanho de tela; <screen> é um media type, ou seja, a declaração de um tipo de mídia; a ordem em que é colocada no arquivo não impacta diretamente em como ela funciona. */
+@media screen and (min-width: 1024px) {
+
+    .container__titulo,
+    .container__titulo--negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-transparente { 
+        display: none; /*oculta a imagem no dispositivo quando não for mobile*/
+    }
+
+    .opcoes__botao:checked~.lista-menu { /*exibe a <lista-menu> quando o item <opcoes__botao> estiver marcado <:checked>.*/
+        display: block;
+        width: auto; /*define a largura do elemento baseada no conteúdo do elemento.*/
+    }
+
+    .opcoes__botao {
+        display: none; /*desabilita e oculta a caixa de seleção*/
+    }
+}

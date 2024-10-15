@@ -6,3 +6,42 @@ hr { /*não precisa inserir . (ponto) para chamar a tag no css*/
     padding: 1em;
     
 }
+
+.lista-rodape {
+    display: none;
+}
+
+
+/*<@media> media query para aplicar estilo em determinado tamanho de tela; <screen> é um media type, ou seja, a declaração de um tipo de mídia; a ordem em que é colocada no arquivo não impacta diretamente em como ela funciona. */
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista-rodape {
+        display: block;
+    }
+
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;
+        margin: 0.8em 0;
+    }
+
+    .lista-rodape__link {
+        text-decoration: none;
+        color: var(--cinza);
+        margin: 0 0.5em;
+    }
+
+    .lista-rodape__titulo {
+        font-size: 14px;
+        color: var(--cinza-claro);
+        text-transform: uppercase;
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+    }
+}
