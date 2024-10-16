@@ -1,1 +1,1 @@
-Projeto da Alura (Alurabooks) em HTML e CSS voltado para layout mobile.
+Projeto da Alura (Alurabooks) em HTML e CSS first-mobile e responsivo a telas maiores.
