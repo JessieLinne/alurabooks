@@ -45,3 +45,14 @@ hr { /*não precisa inserir . (ponto) para chamar a tag no css*/
         font-size: 24px;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .lista-rodape {
+        border-left: 1px solid var(--cinza-claro); /* cria borda na lateral esquerda do elemento. */
+        padding-left: 1em;
+    }
+    
+    .rodape {
+        padding: 3em 0;
+    }
+}

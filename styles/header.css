@@ -68,6 +68,10 @@
     display: none;
 }
 
+.container__texto {
+    display: none;
+}
+
 /*<@media> media query para aplicar estilo em determinado tamanho de tela; <screen> é um media type, ou seja, a declaração de um tipo de mídia; a ordem em que é colocada no arquivo não impacta diretamente em como ela funciona. */
 @media screen and (min-width: 1024px) {
 
@@ -111,5 +115,27 @@
 
     .opcoes__botao {
         display: none; /*desabilita e oculta a caixa de seleção*/
+    }
+}
+
+/* media query para aplicar estilo nas telas com tamanho a partir de 1728px - desktop */
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
     }
 }
