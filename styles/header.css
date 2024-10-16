@@ -7,6 +7,14 @@
     display: inline-block;
 }
 
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer { /* <~> é um combinador que procura um elemento que esteja em seguida dele (procura a classe "container__rotulo" que esteja após a classe "container__botao", < > > é um combinador que procura dentro do elemento informado, no caso "container__rotulo". */
+    background-image: url(../imagens/Menu-Aberto.svg);
+}
+
+.container__botao:checked ~ .container__rotulo {
+    background: var(--azul-degrade);
+}
+
 .cabecalho {
     background-color: var(--branco);
     display: flex;
@@ -115,6 +123,24 @@
 
     .opcoes__botao {
         display: none; /*desabilita e oculta a caixa de seleção*/
+    }
+
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoes__item {
+        padding: 2em 1em;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--branco );
+        text-decoration: none;
     }
 }
 
